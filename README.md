@@ -1,8 +1,19 @@
 ###########################################################################################################################
 #                                                                                                                         #
-#                                    N96 Localization via Context                                                         #
+#                                    N96 Localization via Context - MobiLocate                                                         #
 #                                                                                                                         #
 ###########################################################################################################################
+
+Introduction
+============
+•	Designed a context aware client-server application for Nokia N96 to locate a user in the absence of GPS signals as my final year research project.
+
+•	The client, programmed in Python for S60 and Java ME, collects and transmits the context data wirelessly to the server application and displays the received map of the location.
+
+•	The server consisting of PHP scripts, stores the context data samples in a SQL database, employs a position approximation algorithm with the samples to predict the location and sends it to the client.
+
+•	Utilizes Google Maps API, JSON for data serialisation and third party libraries to collect contextual information such as lighting level, noise level, Wi-Fi signal strength and accelerometer readings.
+
 
 Client Installation
 ===================
@@ -26,7 +37,7 @@ Client Installation
 9) Execute <DRIVE>/Client/MobiLocate.py
 
 
-Server INstallation
+Server Installation
 ===================
 1) Copy the Server folder to a PHP compatible web-server (https://github.com/daran9/n96localization-via-context/blob/master/Server) 
 
